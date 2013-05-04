@@ -40,5 +40,5 @@ python_install_all() {
 }
 
 src_install() {
-	doman *.[1-5]
+	doman "$WORKDIR}/*.[1,5]" || die
 }
